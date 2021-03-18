@@ -17,13 +17,46 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #845EC2;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MLopes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Homepage</a>
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="hero border border-3">
     <h1>Maiara Lopes</h1>
     <h3>Front-end developer based in the UK</h3>
+    <img src="images/profilepicture.jpg" alt="profile picture" class="profile-picture">
     <p class="welcome-paragraph mt-4">Welome to my portfolio. 👩‍💻</p>
     <p class="welcome-paragraph">
     I am a begginer front-end developer with a passion for languages, games, films, and coding.</p>
 </p>
+</div>
+<div class="projects" id="projects">
+<h2 class="projects-heading">My projects</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="images/weatherapp.png" alt="weather app" class="weather-app-image">
+        </div>
+        <div class="col-sm-6">
+            <h3>Weather app</h3>
+            <p class="project-description">I have built this weather application using HMTL 5, CSS 3, JavaScript ES6, API, Bootstrap, GitHub and React. The application is hosted on Netlify and is open-sourced.</p>
+        <a href="https://flamboyant-hypatia-bfdce3.netlify.app/" class="btn btn-branding" target="_blank">Weather app</a>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>
