@@ -49,9 +49,9 @@ p {
 .hero {
   max-width: 700px;
   display: block;
-  margin: 80px auto;
+  margin: 100px auto;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 5px;
   border-width: thick;
   margin-bottom: 40px;
 }
@@ -66,7 +66,7 @@ p {
 .profile-picture {
   display: block;
   margin: 0 auto;
-  max-width: 100px;
+  max-width: 120px;
   border-radius: 50px;
 }
 
@@ -80,8 +80,8 @@ p {
 }
 
 .projects-heading {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 170px;
+  margin-bottom: 70px;
 }
 
 .project-description {
@@ -96,4 +96,16 @@ p {
   margin: 0 auto;
   color: #e1ccec;
   margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .hero {
+    max-width: 360px;
+  }
 }
