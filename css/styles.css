@@ -1,6 +1,7 @@
 :root {
   --primary-font: "Acme", sans-serif;
   --secondary-font: "Patrick Hand", cursive;
+  --paragraph-opacity: 80%;
 }
 
 body {
@@ -61,6 +62,7 @@ p {
   display: block;
   margin: 10px auto;
   padding: 2px;
+  opacity: var(--paragraph-opacity);
 }
 
 .profile-picture {
@@ -82,10 +84,12 @@ p {
 .heading {
   margin-top: 200px;
   margin-bottom: 70px;
+  padding-top: 56px;
 }
 
 .project-description {
   font-size: 28px;
+  opacity: var(--paragraph-opacity);
 }
 
 .btn-branding {
@@ -107,16 +111,43 @@ p {
     font-size: 24px;
   }
   .hero {
-    max-width: 360px;
+    max-width: 340px;
+  }
+  .about-paragraph,
+  .contact-paragraph {
+    padding: 20px;
   }
 }
 
-.about-paragraph {
+.about-paragraph,
+.contact-paragraph {
   font-size: 20px;
   font-family: var(--secondary-font);
-  max-width: 900px;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
   line-height: 1.8;
   margin-bottom: 40px;
+  opacity: var(--paragraph-opacity);
+}
+
+a {
+  color: black;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+a:hover {
+  color: #845ec2;
+}
+
+.contact-row {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.icons {
+  font-size: 40px;
 }
