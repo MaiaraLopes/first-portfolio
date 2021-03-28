@@ -83,8 +83,8 @@ p {
 
 .heading {
   margin-top: 200px;
-  margin-bottom: 70px;
-  padding-top: 56px;
+  margin-bottom: 90px;
+  padding-top: 60px;
 }
 
 .project-description {
@@ -150,4 +150,20 @@ a:hover {
 }
 .icons {
   font-size: 40px;
+}
+
+.links {
+  border-radius: 70px;
+  background-color: #e1ccec;
+  padding: 10px;
+  margin: 30px;
+}
+
+.footer {
+  font-family: var(--primary-font);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #8d69c5;
 }
