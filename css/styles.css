@@ -167,8 +167,18 @@ a:hover {
   .hero {
     max-width: 340px;
   }
+
+  .heading {
+      margin-bottom: 35px;
+  }
   .about-paragraph,
   .contact-paragraph {
     padding: 20px;
-  }
+      }
+
+  .links {
+  border-radius: 70px;
+  background-color: #e1ccec;
+  padding: 20px;
+  margin: 8px;
 }
