@@ -79,8 +79,8 @@ p {
   border-radius: 30px;
 }
 
-.projects-heading {
-  margin-top: 170px;
+.heading {
+  margin-top: 200px;
   margin-bottom: 70px;
 }
 
@@ -96,6 +96,7 @@ p {
   margin: 0 auto;
   color: #e1ccec;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 700px) {
@@ -108,4 +109,14 @@ p {
   .hero {
     max-width: 360px;
   }
+}
+
+.about-paragraph {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
