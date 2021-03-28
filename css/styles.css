@@ -103,22 +103,6 @@ p {
   margin-bottom: 100px;
 }
 
-@media (max-width: 700px) {
-  h1 {
-    font-size: 40px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  .hero {
-    max-width: 340px;
-  }
-  .about-paragraph,
-  .contact-paragraph {
-    padding: 20px;
-  }
-}
-
 .about-paragraph,
 .contact-paragraph {
   font-size: 20px;
@@ -166,4 +150,25 @@ a:hover {
   margin-top: 100px;
   margin-bottom: 50px;
   color: #8d69c5;
+}
+
+.last-paragraph {
+  display: inline;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .hero {
+    max-width: 340px;
+  }
+  .about-paragraph,
+  .contact-paragraph {
+    padding: 20px;
+  }
 }
