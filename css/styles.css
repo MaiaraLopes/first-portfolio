@@ -1,10 +1,13 @@
 :root {
   --primary-font: "Acme", sans-serif;
-  --secondary-font: "Patrick Hand", cursive;
+  --secondary-font: "Titillium Web", sans-serif;
   --paragraph-opacity: 80%;
 }
 
-body {
+.body {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
   background-image: linear-gradient(
     to right bottom,
     #845ec2,
@@ -18,6 +21,17 @@ body {
     #d4bde4,
     #e1ccec
   );
+}
+.navbar {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.navbar-brand,
+.nav-link {
+  font-family: var(--secondary-font);
+  font-weight: 600;
 }
 
 h1,
@@ -41,20 +55,25 @@ h3 {
 p {
   font-family: var(--secondary-font);
 }
-
-.navbar-brand,
-.nav-link {
-  font-family: var(--secondary-font);
+.hero-container {
+  padding-top: 80px;
 }
-
 .hero {
   max-width: 700px;
   display: block;
-  margin: 100px auto;
+  margin: 56px auto;
   border-radius: 30px;
   padding: 10px 5px;
   border-width: thick;
-  margin-bottom: 40px;
+}
+
+section {
+  background-color: #eae7fa;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 15px 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 50px;
 }
 .welcome-paragraph {
   font-size: 24px;
@@ -63,6 +82,7 @@ p {
   margin: 10px auto;
   padding: 2px;
   opacity: var(--paragraph-opacity);
+  font-weight: 600;
 }
 
 .profile-picture {
@@ -76,19 +96,22 @@ p {
   margin-bottom: 40px;
 }
 
-.weather-app-image {
-  max-width: 600px;
+.apps-image {
+  max-width: 300px;
   border-radius: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
 .heading {
-  margin-top: 200px;
-  margin-bottom: 90px;
+  margin-top: 150px;
+  margin-bottom: 40px;
   padding-top: 60px;
+  padding-bottom: 0px;
 }
 
 .project-description {
-  font-size: 28px;
+  font-size: 22px;
   opacity: var(--paragraph-opacity);
 }
 
@@ -111,8 +134,8 @@ p {
   display: block;
   margin: 0 auto;
   line-height: 1.8;
-  margin-bottom: 40px;
   opacity: var(--paragraph-opacity);
+  padding: 20px;
 }
 
 a {
@@ -130,7 +153,7 @@ a:hover {
   max-width: 500px;
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .icons {
   font-size: 40px;
@@ -155,6 +178,7 @@ a:hover {
 .last-paragraph {
   display: inline;
   text-decoration: none;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 700px) {
@@ -167,18 +191,21 @@ a:hover {
   .hero {
     max-width: 340px;
   }
-
+  section {
+    margin: 10px;
+  }
   .heading {
-      margin-bottom: 35px;
+    margin-bottom: 35px;
   }
   .about-paragraph,
   .contact-paragraph {
     padding: 20px;
-      }
+  }
 
   .links {
-  border-radius: 70px;
-  background-color: #e1ccec;
-  padding: 20px;
-  margin: 8px;
+    border-radius: 70px;
+    background-color: #e1ccec;
+    padding: 10px;
+    margin: 8px;
+  }
 }
